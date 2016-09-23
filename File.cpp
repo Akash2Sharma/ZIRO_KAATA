@@ -11,44 +11,40 @@ void board();//FUNCTION TO DRAW THE BOARD//
 void guide();//FUNCTION FOR USER GUIDE//
 main()
 {
- clrscr();
-if(-999)
-{
-char ch[20],sank;
-int j=0,o=0;
-char a,c,b,d;
-cout<<"Enter the password within a trial period of 4 times:";
-sam:
-ch[j]=getch();
-cout<<"*";
-j++;
-if(j<8)
-{goto sam;}
-else
-{}
-if (ch[0]=='n'&&ch[1]=='a'&&ch[2]=='h'&&ch[3]=='i' &&ch[4]==' '&&ch[5]=='p'&&ch[6]=='t'&&ch[7]=='a')
-{
-cout<<"\a\nACESS GRANTED";
-
-}
-else
-{
-cout<<"\a\nACESS DENIED ";
-o++;
-j=0;
-if(o<4)
-goto sam;
-}
-if(o>=4)
-{cout<<"\nYou have entered the wrong password 4 times";
-return-999;
-}
+ 	clrscr();
+	if(-999)
+		{	
+		char ch[20],sank;
+		int j=0,o=0;
+		char a,c,b,d;
+		cout<<"Enter the password within a trial period of 4 times:";
+		sam:
+		ch[j]=getch();
+		cout<<"*";
+		j++;
+		if(j<8)
+		{goto sam;}
+		else
+		{}
+		if (ch[0]=='n'&&ch[1]=='a'&&ch[2]=='h'&&ch[3]=='i' &&ch[4]==' '&&ch[5]=='p'&&ch[6]=='t'&&ch[7]=='a')
+		{	cout<<"\a\nACESS GRANTED";	}
+		else
+		{ 	cout<<"\a\nACESS DENIED ";
+			o++;
+			j=0;
+			if(o<4)
+			goto sam;
+		}
+		if(o>=4)
+		{	cout<<"\nYou have entered the wrong password 4 times";
+			return-999;
+		}
        }
 	int player = 1,i,choice,option;
 	char mark,choice1;
 	clrscr();
        do
-       {    clrscr();
+       {clrscr();
 	cout<<"1.ENTER THE GAME "<<endl<<"2.USER GUIDE"<<endl<<"3.EXIT";
 	cin>>option;
 	switch(option)
@@ -87,25 +83,24 @@ return-999;
 		}
 		i=checkwin();
 		player++;
-	}while(i==-1);
-	board();
-	if(i==1)
-		cout<<"==>\aPlayer "<<--player<<" win ";
-	else
-
-		cout<<"==>\aGame draw";break;
-case 2:guide();
-	break;
-
-case 3:exit(0);break;
-default:cout<<"Wrong Choice";
-}
-cout<<"\nDo you want to continue";
-cin>>choice1;
-}while(choice1=='y'||choice1=='Y');
-	getch();
-	return 0;
-}
+		}while(i==-1);
+		board();
+		if(i==1)
+			cout<<"==>\aPlayer "<<--player<<" win ";
+		else
+			cout<<"==>\aGame draw";break;
+	case 2:guide();
+		break;
+	
+	case 3:exit(0);break;
+	default:cout<<"Wrong Choice";
+	}
+	cout<<"\nDo you want to continue";
+	cin>>choice1;
+	}while(choice1=='y'||choice1=='Y');
+		getch();
+		return 0;
+	}
 
 int checkwin()
 {
