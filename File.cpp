@@ -1,4 +1,4 @@
-//Tic Tac Toe GAME
+//Ziro kaata  GAME
 //Password : nahi pta
 
 #include <iostream.h>
