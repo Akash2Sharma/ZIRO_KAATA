@@ -143,3 +143,26 @@ void board()
 	cout << "\t\t     |     |     " << endl << endl;
 }
 
+void guide()
+{
+clrscr();
+
+cout<<"\nThe TIC-TAC-TOE games board is similar to that of # key\nor it looks something like this :\n\t\t\t    _|_|_"<<endl<<"\t\t\t    "<<
+							       "_|_|_ "<<endl<<"\t\t\t    "<<
+							       " | |  ";
+cout<<"\nIn this gaps turn by turn crosses and zeroes have to be filled up";
+cout<<"TIC-TAC-TOE is basically a X and O  game in which the player has to complete 3";
+cout<<"\n crosses or zeroe which may be horizontal vertical or even  diagonal x|x|x"<<
+								     "\t\t\t\t\t\t\t\t\t     -|-|-"<<
+								     "\t\t\t\t\t\t\t\t\t     _|_|_"<<
+								     "\t\t\t\t\t\t\t\t\t      | |  ";
+cout<<endl<<endl<<"OR\t\t\t\t\t\t\t             x|_|_  "<<endl<<
+	   "\t\t\t\t\t\t\t             -|x|_   "<<
+	   "\t\t\t\t\t\t\t\t             -|-|x";
+
+cout<<endl<<endl<<"OR\t\t\t\t\t\t\t\t     x|_|_"<<endl<<
+		  " \t\t\t\t\t\t\t\t     x|_|_"<<endl<<
+		  " \t\t\t\t\t\t\t\t     x| | ";;
+
+}
+
