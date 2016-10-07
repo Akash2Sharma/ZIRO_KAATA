@@ -126,3 +126,20 @@ int checkwin()
 		return -1;
 }
 
+void board()
+{
+	clrscr();
+	cout << "\n\n\tTic Tac Toe\n\n";
+	cout << "Player 1 (X)  -  Player 2 (O)" << endl << endl;
+	cout << endl;
+	cout << "\t\t     |     |     " << endl;
+	cout << "\t\t  " << square[7] << "  |  " << square[8] << "  |  " << square[9] << endl;
+	cout << "\t\t_____|_____|_____" << endl;
+	cout << "\t\t     |     |     " << endl;
+	cout << "\t\t  " << square[4] << "  |  " << square[5] << "  |  " << square[6] << endl;
+	cout << "\t\t_____|_____|_____" << endl;
+	cout << "\t\t     |     |     " << endl;
+	cout << "\t\t  " << square[1] << "  |  " << square[2] << "  |  " << square[3] << endl;
+	cout << "\t\t     |     |     " << endl << endl;
+}
+
