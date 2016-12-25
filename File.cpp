@@ -33,7 +33,7 @@ main()
 			o++;
 			j=0;
 			if(o<4)
-			goto sam;
+			goto sam; 
 		}
 		if(o>=4)
 		{	cout<<"\nYou have entered the wrong password 4 times";
