@@ -1,16 +1,16 @@
 //Ziro kaata  GAME
 //Password : nahi pta
-                                                 
+                                                                
 #include <iostream.h>
 #include <conio.h>
-#include<process.h>
-#include<stdlib.h>
+#include<process.h>                 
+#include<stdlib.h>               
 char square[10] = {'o','1','2','3','4','5','6','7','8','9'};                      
 int checkwin();//FUNTION FOR RESULT
 void board();//FUNCTION TO DRAW THE BOARD
 void guide();//FUNCTION FOR USER GUIDE
 main()
-{
+{             
  	clrscr();
 	if(-999)
 		{	
@@ -51,9 +51,9 @@ main()
 	{
 	case 1:
 	      do
-		 {
+		 { 
 		board();
-		player=(player%2)?1:2;
+		player=(player%2)?1:2;        
 		cout << "Player " << player << ", enter a number:  ";
 		cin >> choice;
 		mark=(player == 1) ? 'X' : 'O';
