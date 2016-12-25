@@ -1,6 +1,6 @@
 //Ziro kaata  GAME
 //Password : nahi pta
-                     
+                                                 
 #include <iostream.h>
 #include <conio.h>
 #include<process.h>
@@ -127,7 +127,7 @@ int checkwin()
 }
 
 void board()
-{
+{                     
 	clrscr();
 	cout << "\n\n\tTic Tac Toe\n\n";
 	cout << "Player 1 (X)  -  Player 2 (O)" << endl << endl;
