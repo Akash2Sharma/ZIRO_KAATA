@@ -1,6 +1,6 @@
 //Ziro kaata  GAME
 //Password : nahi pta
-
+                     
 #include <iostream.h>
 #include <conio.h>
 #include<process.h>
