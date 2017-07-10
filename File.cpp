@@ -1,5 +1,5 @@
    
-//Ziro kaata  GAME
+//Ziro kaata  GAME 
 //Password : nahi pta.  
                                                                 
 #include <iostream.h>
